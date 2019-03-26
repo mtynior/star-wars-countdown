@@ -1,6 +1,6 @@
 <template>
   <div class="timer">
-    <h1>{{ name }}</h1>
+    <h1>{{ this.timer.title }}</h1>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: "Timer",
   props: {
-    name
+    timer: {}
   }
 };
 </script>
