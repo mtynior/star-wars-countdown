@@ -10,26 +10,15 @@ export default {
   components: {
     Timer
   },
-  watch: {
-    $route() {
-      //this.currentTimer = this.getTimerForSlug(this.$route.params.slug);
-    }
-  },
   computed: {
     currentTimer() {
-      return this.getTimerForSlug(this.$route.params.slug);
-    }
-  },
-  methods: {
-    getTimerForSlug: function(slug) {
-      return this.$store.getters.TIMERS[0]
+      let slug = this.$route.params.slug;
 
-      /*if (!slug || 0 === slug.length) {
+      if (!slug || 0 === slug.length) {
         return this.$store.getters.TIMERS[0];
       }
-      return availableTimers.find(
-        timer => timer.slug.toLowerCase() == slug.toLowerCase()
-      );*/
+
+      return this.$store.getters.findBySlug(slug);
     }
   }
 };

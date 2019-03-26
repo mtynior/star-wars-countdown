@@ -19,6 +19,12 @@ export default new Vuex.Store({
   getters: {
     TIMERS: state => {
       return state.timers;
+    },
+    findBySlug(state) {
+      return slug =>
+        state.timers.find(
+          timer => timer.slug.toLowerCase() == slug.toLowerCase()
+        );
     }
   },
   mutations: {},
