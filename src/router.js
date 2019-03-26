@@ -22,15 +22,11 @@ export default new Router({
       beforeEnter: (to, _, next) => {
         let slug = to.params.slug;
 
-        if (slug == null) {
-          return next();
+        if (slug != null && store.getters.findBySlug(slug) == null) {
+          next("/404");
+        } else {
+          next();
         }
-
-        if (store.getters.findBySlug(slug) == null) {
-          return next("/404");
-        }
-
-        next();
       }
     }
   ]
