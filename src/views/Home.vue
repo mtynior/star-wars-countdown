@@ -18,7 +18,7 @@ export default {
         return this.$store.getters.TIMERS[0];
       }
 
-      return this.$store.getters.findBySlug(slug);
+      return this.$store.getters.getBySlug(slug);
     }
   }
 };

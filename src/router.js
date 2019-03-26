@@ -22,7 +22,7 @@ export default new Router({
       beforeEnter: (to, _, next) => {
         let slug = to.params.slug;
 
-        if (slug != null && store.getters.findBySlug(slug) == null) {
+        if (slug != null && store.getters.getBySlug(slug) == null) {
           next("/404");
         } else {
           next();
