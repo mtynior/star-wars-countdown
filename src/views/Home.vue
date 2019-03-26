@@ -1,10 +1,14 @@
 <template>
-  <div class="home"></div>
+  <Timer name="Hello world" />
 </template>
 
 <script>
+import Timer from "@/components/Timer.vue";
+
 export default {
   name: "home",
-  components: {}
+  components: {
+    Timer
+  }
 };
 </script>
