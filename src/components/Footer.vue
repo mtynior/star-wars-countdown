@@ -1,17 +1,20 @@
 <template>
   <div class="footer">
     <div>
-      <span>
+      <div class="links">
         <a href="http://www.starwars.com/" target="_blank">
-          <i class="fa-2x swc-star-wars"></i>
+          <i class="swc-star-wars"></i>
         </a>
         <a href="https://tynior.com/" target="_blank">
-          <i class="fa-2x swc-qeltive"></i>
+          <i class="swc-qeltive"></i>
         </a>
-        <a href="https://github.com/mtynior" target="_blank">
-          <i class="fab fa-2x fa-github"></i>
+        <a
+          href="https://github.com/mtynior/star-wars-countdown"
+          target="_blank"
+        >
+          <i class="swc-github"></i>
         </a>
-      </span>
+      </div>
     </div>
     <div>
       <span>
