@@ -1,9 +1,6 @@
 <template>
   <div class="tileGrid">
-    <Tile v-for="timer in availableTimers"
-      :key="timer.slug"
-      :timer="timer"
-    />
+    <Tile v-for="timer in availableTimers" :key="timer.slug" :timer="timer" />
   </div>
 </template>
 

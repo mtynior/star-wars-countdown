@@ -2,18 +2,21 @@
   <div>
     <Timer :timer="currentTimer" />
     <TileGrid class="timersGrid" />
+    <Footer />
   </div>
 </template>
 
 <script>
 import Timer from "@/components/Timer.vue";
 import TileGrid from "@/components/TileGrid.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "home",
   components: {
     Timer,
-    TileGrid
+    TileGrid,
+    Footer
   },
   computed: {
     currentTimer() {
