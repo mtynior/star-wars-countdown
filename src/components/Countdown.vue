@@ -1,19 +1,19 @@
 <template>
   <div class="countdown">
     <div class="timeFraction">
-      <h1>{{ values.days }}</h1>
+      <h1>{{ timeDiff.days }}</h1>
       <span>Days</span>
     </div>
     <div class="timeFraction">
-      <h1>{{ values.hours }}</h1>
+      <h1>{{ timeDiff.hours }}</h1>
       <span>Hours</span>
     </div>
     <div class="timeFraction">
-      <h1>{{ values.minutes }}</h1>
+      <h1>{{ timeDiff.minutes }}</h1>
       <span>Minutes</span>
     </div>
     <div class="timeFraction">
-      <h1>{{ values.seconds }}</h1>
+      <h1>{{ timeDiff.seconds }}</h1>
       <span>Seconds</span>
     </div>
   </div>
@@ -25,16 +25,28 @@ var countdown = require("countdown");
 export default {
   name: "Countdown",
   props: {
-    dateInUTC: {}
+    dateInUTC: null
   },
-  computed: {
-    values() {
+  data() {
+    return {
+      timeDiff: null
+    };
+  },
+  created() {
+    this.calculateTimeDiff();
+    setInterval(this.calculateTimeDiff, 1000);
+  },
+  beforeDestroy() {
+    clearInterval(this.calculateTimeDiff);
+  },
+  methods: {
+    calculateTimeDiff() {
       let units =
         countdown.DAYS |
         countdown.HOURS |
         countdown.MINUTES |
         countdown.SECONDS;
-      return countdown(null, new Date(this.dateInUTC), units);
+      this.timeDiff = countdown(null, new Date(this.dateInUTC), units);
     }
   }
 };
