@@ -1,5 +1,6 @@
 .countdown {
-  width: 50vw;
+  width: 100%;
+  background-color: brown;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -12,13 +13,13 @@
     justify-content: center;
 
     h1 {
-      font-size: 5rem;
+      font-size: 8rem;
       margin: 0;
       padding: 0;
     }
 
     span {
-      font-size: $font-size-lg;
+      font-size: $font-size-xl;
     }
 
   }

@@ -3,7 +3,7 @@
     <div>
       <h1>{{ timer.title }}</h1>
     </div>
-    <Countdown />
+    <Countdown :dateInUTC="timer.countdownTo" />
   </div>
 </template>
 

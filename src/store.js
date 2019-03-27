@@ -8,11 +8,13 @@ export default new Vuex.Store({
     timers: [
       {
         slug: "episode9",
-        title: "Star Wars Episode 9"
+        title: "Star Wars Episode 9",
+        countdownTo: "2019-04-30T22:00:00Z"
       },
       {
         slug: "celebration",
-        title: "Star Wars Celebration 2019"
+        title: "Star Wars Celebration 2019",
+        countdownTo: "2019-03-31T22:00:00Z"
       }
     ]
   },
