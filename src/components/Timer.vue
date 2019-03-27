@@ -1,12 +1,20 @@
 <template>
   <div class="timer">
-    <h1>{{ timer.title }}</h1>
+    <div>
+      <h1>{{ timer.title }}</h1>
+    </div>
+    <Countdown />
   </div>
 </template>
 
 <script>
+import Countdown from "@/components/Countdown.vue";
+
 export default {
   name: "Timer",
+  components: {
+    Countdown
+  },
   props: {
     timer: {}
   }
