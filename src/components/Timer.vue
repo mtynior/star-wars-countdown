@@ -1,6 +1,6 @@
 <template>
   <div class="timer">
-    <h1>{{ this.timer.title }}</h1>
+    <h1>{{ timer.title }}</h1>
   </div>
 </template>
 
