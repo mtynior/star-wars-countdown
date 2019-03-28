@@ -9,19 +9,22 @@ export default new Vuex.Store({
       {
         slug: "episode9",
         title: "Star Wars Episode 9",
-        countdownTo: "2019-12-30T23:00:00Z",
+        logo: "/images/episode_9/episode_9_logo.png",
+        countdownTo: "2019-12-18T22:00:00Z",
         style: {
-          backgroundColor: "teal",
+          backgroundImage: "url(\"/images/episode_9/starfield_tile.png\")",
+          backgroundRepeat: "repeat",
           color: "white"
         }
       },
       {
-        slug: "celebration",
+        slug: "celebration2019",
         title: "Star Wars Celebration 2019",
-        countdownTo: "2019-03-31T22:00:00Z",
+        logo: "/images/celebration_2019/celebration_2019_logo.png",
+        countdownTo: "2019-04-11T12:00:00Z",
         style: {
-          backgroundColor: "mediumslateblue",
-          color: "white"
+          backgroundColor: "black",
+          color: "#FFE900"
         }
       }
     ]

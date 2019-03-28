@@ -7,10 +7,7 @@
       <a href="https://tynior.com/" target="_blank">
         <i class="swc-qeltive"></i>
       </a>
-      <a
-        href="https://github.com/mtynior/star-wars-countdown"
-        target="_blank"
-      >
+      <a href="https://github.com/mtynior/star-wars-countdown" target="_blank">
         <i class="swc-github"></i>
       </a>
     </div>
