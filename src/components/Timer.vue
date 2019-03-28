@@ -1,9 +1,11 @@
 <template>
-  <div class="timer">
-    <div>
-      <h1>{{ timer.title }}</h1>
+  <div class="timer" :style="timer.style">
+    <div class="container">
+      <div class="logo">
+        <h1>{{ timer.title }}</h1>
+      </div>
+      <Countdown :dateInUTC="timer.countdownTo" />
     </div>
-    <Countdown :dateInUTC="timer.countdownTo" />
   </div>
 </template>
 
