@@ -9,7 +9,7 @@ export default new Vuex.Store({
       {
         slug: "episode9",
         title: "Star Wars Episode 9",
-        countdownTo: "2019-04-30T22:00:00Z",
+        countdownTo: "2019-12-30T23:00:00Z",
         style: {
           backgroundColor: "teal",
           color: "white"

@@ -2,8 +2,6 @@ $timer-height: 98vh !default;
 
 .timer {
   height: $timer-height;
-  background-color: mediumslateblue;
-
   &:after {
     content: "";
     position: absolute;
