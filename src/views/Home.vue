@@ -13,6 +13,11 @@ import Footer from "@/components/Footer.vue";
 
 export default {
   name: "home",
+  metaInfo() {
+    return {
+      title: this.currentTimer.title
+    };
+  },
   components: {
     Timer,
     TileGrid,
