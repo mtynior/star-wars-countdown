@@ -1,6 +1,6 @@
 <template>
   <div class="tileGrid">
-    <Tile v-for="timer in availableTimers" :key="timer.slug" :timer="timer" />
+    <Tile v-for="timer in timers" :key="timer.slug" :timer="timer" />
   </div>
 </template>
 
@@ -12,10 +12,8 @@ export default {
   components: {
     Tile
   },
-  computed: {
-    availableTimers() {
-      return this.$store.getters.TIMERS;
-    }
+  props: {
+    timers: null
   }
 };
 </script>

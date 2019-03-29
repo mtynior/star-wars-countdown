@@ -1,7 +1,7 @@
 <template>
   <div>
     <Timer :timer="currentTimer" />
-    <TileGrid class="timersGrid" />
+    <TileGrid :timers="visibleTimers" class="timersGrid" />
     <Footer />
   </div>
 </template>
@@ -32,6 +32,9 @@ export default {
       }
 
       return this.$store.getters.getBySlug(slug);
+    },
+    visibleTimers() {
+      return this.$store.getters.TIMERS.filter(timer => timer.slug != this.currentTimer.slug);
     }
   }
 };
