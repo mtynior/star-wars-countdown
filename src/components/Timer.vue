@@ -2,7 +2,7 @@
   <div class="timer" :style="timer.style">
     <div class="container">
       <div class="logo">
-        <img :src="timer.logo">
+        <img :src="timer.logo" />
       </div>
       <Countdown :dateInUTC="timer.countdownTo" />
     </div>

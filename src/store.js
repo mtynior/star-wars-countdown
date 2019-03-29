@@ -12,7 +12,7 @@ export default new Vuex.Store({
         logo: "/images/episode_9/episode_9_logo.png",
         countdownTo: "2019-12-18T22:00:00Z",
         style: {
-          backgroundImage: "url(\"/images/episode_9/starfield_tile.png\")",
+          backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
           backgroundRepeat: "repeat",
           color: "white"
         }
