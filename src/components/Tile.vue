@@ -1,8 +1,15 @@
 <template>
   <div class="tile">
-    <router-link :to="timer.slug">
-      <p>{{ timer.title }}</p>
-    </router-link>
+    <header class="miniature" :style="timer.style">
+      <router-link :to="timer.slug">
+        <img class="logo" :src="timer.logo" />
+      </router-link>
+    </header>
+    <footer class="caption">
+      <router-link :to="timer.slug">
+        <span>{{ timer.title }}</span>
+      </router-link>
+    </footer>
   </div>
 </template>
 
