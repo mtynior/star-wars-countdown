@@ -34,7 +34,9 @@ export default {
       return this.$store.getters.getBySlug(slug);
     },
     visibleTimers() {
-      return this.$store.getters.TIMERS.filter(timer => timer.slug != this.currentTimer.slug);
+      return this.$store.getters.TIMERS.filter(
+        timer => timer.slug != this.currentTimer.slug
+      );
     }
   }
 };
