@@ -15,7 +15,15 @@ export default new Vuex.Store({
           backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
           backgroundRepeat: "repeat",
           color: "white"
-        }
+        },
+        messages: [
+          {
+            fromDate: null,
+            toDate: "2019-12-18T22:00:00Z",
+            message: null,
+            countdownTo: "2019-12-18T22:00:00Z"
+          }
+        ]
       },
       {
         slug: "celebration2019",
@@ -25,7 +33,33 @@ export default new Vuex.Store({
         style: {
           backgroundColor: "black",
           color: "#FFE900"
-        }
+        },
+        messages: [
+          {
+            fromDate: null,
+            toDate: "2019-04-11T12:00:00Z",
+            message: null,
+            countdownTo: "2019-04-11T12:00:00Z"
+          }
+        ]
+      },
+      {
+        slug: "clonewars",
+        title: "Star Wars The Clone Wars",
+        logo: null,
+        countdownTo: null,
+        style: {
+          backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
+          color: "#FFE900"
+        },
+        messages: [
+          {
+            fromDate: null,
+            toDate: null,
+            message: "Comming Soon",
+            countdownTo: null
+          }
+        ]
       }
     ]
   },

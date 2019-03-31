@@ -34,7 +34,7 @@ export default {
   },
   created() {
     this.calculateTimeDiff();
-    setInterval(this.calculateTimeDiff, 1000);
+    setInterval(this.calculateTimeDiff, 500);
   },
   beforeDestroy() {
     clearInterval(this.calculateTimeDiff);

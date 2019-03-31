@@ -4,7 +4,10 @@
       <div class="logo">
         <img :src="timer.logo" />
       </div>
-      <Countdown :dateInUTC="timer.countdownTo" />
+      <Countdown v-if="currentMessage.countdownTo != null"  :dateInUTC="currentMessage.countdownTo" />
+      <div v-else class="message">
+        <h1>{{ currentMessage.message }}</h1>
+      </div>
     </div>
   </div>
 </template>
@@ -19,6 +22,11 @@ export default {
   },
   props: {
     timer: {}
+  },
+  computed: {
+    currentMessage(){
+      return this.timer.messages[0];
+    }
   }
 };
 </script>
