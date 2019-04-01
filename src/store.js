@@ -56,7 +56,7 @@ export default new Vuex.Store({
       {
         slug: "clonewars",
         title: "Star Wars The Clone Wars",
-        logo: null,
+        logo: "/images/clone_wars/clone_wars_logo.svg",
         style: {
           backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
           color: "#FFE900"
