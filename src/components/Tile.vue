@@ -4,10 +4,10 @@
       <header class="miniature" :style="timer.style">
         <img class="logo" :src="timer.logo" />
       </header>
-       <footer class="caption">
+      <footer class="caption">
         <span>{{ timer.title }}</span>
       </footer>
-    </router-link> 
+    </router-link>
   </div>
 </template>
 
