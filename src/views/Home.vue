@@ -31,7 +31,7 @@ export default {
         return this.$store.getters.TIMERS[0];
       }
 
-      return this.$store.getters.getBySlug(slug);
+      return this.$store.getters.getTimerBySlug(slug);
     },
     visibleTimers() {
       return this.$store.getters.TIMERS.filter(

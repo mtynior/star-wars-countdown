@@ -4,7 +4,10 @@
       <div class="logo">
         <img :src="timer.logo" />
       </div>
-      <Countdown v-if="currentMessage.countdownTo != null"  :dateInUTC="currentMessage.countdownTo" />
+      <Countdown
+        v-if="currentMessage.countdownTo != null"
+        :dateInUTC="currentMessage.countdownTo"
+      />
       <div v-else class="message">
         <h1>{{ currentMessage.message }}</h1>
       </div>
@@ -24,8 +27,11 @@ export default {
     timer: {}
   },
   computed: {
-    currentMessage(){
-      return this.timer.messages[0];
+    currentMessage() {
+      return this.$store.getters.getMessageForTimerWithSlugWithinDate(
+        this.timer.slug,
+        new Date()
+      );
     }
   }
 };

@@ -10,7 +10,6 @@ export default new Vuex.Store({
         slug: "episode9",
         title: "Star Wars Episode 9",
         logo: "/images/episode_9/episode_9_logo.png",
-        countdownTo: "2019-12-18T22:00:00Z",
         style: {
           backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
           backgroundRepeat: "repeat",
@@ -29,7 +28,6 @@ export default new Vuex.Store({
         slug: "celebration2019",
         title: "Star Wars Celebration 2019",
         logo: "/images/celebration_2019/celebration_2019_logo.png",
-        countdownTo: "2019-04-11T12:00:00Z",
         style: {
           backgroundColor: "black",
           color: "#FFE900"
@@ -40,6 +38,18 @@ export default new Vuex.Store({
             toDate: "2019-04-11T12:00:00Z",
             message: null,
             countdownTo: "2019-04-11T12:00:00Z"
+          },
+          {
+            fromDate: "2019-04-11T12:00:00Z",
+            toDate: "2019-04-15T12:00:00Z",
+            message: "It's happening right now!",
+            countdownTo: null
+          },
+          {
+            fromDate: "2019-04-15T12:00:00Z",
+            toDate: null,
+            message: "It's over :(",
+            countdownTo: null
           }
         ]
       },
@@ -47,7 +57,6 @@ export default new Vuex.Store({
         slug: "clonewars",
         title: "Star Wars The Clone Wars",
         logo: null,
-        countdownTo: null,
         style: {
           backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
           color: "#FFE900"
@@ -65,8 +74,32 @@ export default new Vuex.Store({
   },
   getters: {
     TIMERS: state => state.timers,
-    getBySlug: state => slug =>
-      state.timers.find(timer => timer.slug.toLowerCase() == slug.toLowerCase())
+    getTimerBySlug: state => slug =>
+      state.timers.find(
+        timer => timer.slug.toLowerCase() == slug.toLowerCase()
+      ),
+    getMessageForTimerWithSlugWithinDate: (state, getters) => (
+      slug,
+      referenceDate
+    ) => {
+      let timer = getters.getTimerBySlug(slug);
+      return timer.messages.find(message => {
+        let fromDate = message.fromDate ? new Date(message.fromDate) : null;
+        let toDate = message.toDate ? new Date(message.toDate) : null;
+
+        if (fromDate <= referenceDate && referenceDate <= toDate) {
+          return true;
+        } else if (!fromDate && referenceDate <= toDate) {
+          return true;
+        } else if (fromDate <= referenceDate && !toDate) {
+          return true;
+        } else if (!fromDate && !toDate) {
+          return true;
+        } else {
+          return false;
+        }
+      });
+    }
   },
   mutations: {},
   actions: {}
