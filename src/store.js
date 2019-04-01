@@ -65,7 +65,7 @@ export default new Vuex.Store({
           {
             fromDate: null,
             toDate: null,
-            message: "Comming Soon",
+            message: "Comming Soon!",
             countdownTo: null
           }
         ]
