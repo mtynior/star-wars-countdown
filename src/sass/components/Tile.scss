@@ -19,11 +19,16 @@ $tile-min-height: 20vh;
         justify-content: center;
 
         .logo {
-            display: block;
+            border: none;
+            display: none;
             margin-left: auto;
             margin-right: auto;
             width: 80%;
-            height: 80%;        
+            height: 80%;     
+            
+            &[src] {
+                display: block;
+            }
         }
     }
 
