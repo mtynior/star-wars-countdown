@@ -2,7 +2,7 @@
   <div class="timer" :style="timer.style">
     <div class="container">
       <div class="logo">
-        <img :src="timer.logo" />
+        <img :srcset="timer.logo" />
       </div>
       <Countdown
         v-if="currentMessage.countdownTo != null"

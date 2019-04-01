@@ -9,7 +9,7 @@ export default new Vuex.Store({
       {
         slug: "episode9",
         title: "Star Wars Episode 9",
-        logo: "/images/episode_9/episode_9_logo.png",
+        logo: "/images/episode_9/episode_9_logo_vector.svg",
         style: {
           backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
           backgroundRepeat: "repeat",
@@ -27,7 +27,7 @@ export default new Vuex.Store({
       {
         slug: "celebration2019",
         title: "Star Wars Celebration 2019",
-        logo: "/images/celebration_2019/celebration_2019_logo.png",
+        logo: "/images/celebration_2019/celebration_2019_vector.svg",
         style: {
           backgroundColor: "black",
           color: "#FFE900"
