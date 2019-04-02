@@ -24,7 +24,7 @@
     "style": {
       "backgroundImage":
         "url('/img/assets/celebration_2019/celebration_2019_background.png')",
-      "backgroundSiz": "cover",
+      "backgroundSize": "cover",
       "color": "#ffe900"
     },
     "messages": [
