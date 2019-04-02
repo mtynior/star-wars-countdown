@@ -13,7 +13,7 @@ export default new Vuex.Store({
         style: {
           backgroundImage: 'url("/img/assets/episode_9/starfield_tile.png")',
           backgroundRepeat: "repeat",
-          color: "white"
+          color: "ffffff"
         },
         messages: [
           {
@@ -32,7 +32,7 @@ export default new Vuex.Store({
           backgroundImage:
             'url("/img/assets/celebration_2019/celebration_2019_background.png")',
           backgroundSize: "cover",
-          color: "#FFE900"
+          color: "#ffe900"
         },
         messages: [
           {
@@ -63,7 +63,26 @@ export default new Vuex.Store({
           backgroundImage:
             'url("/img/assets/clone_wars/clone_wars_background.jpg")',
           backgroundSize: "cover",
-          color: "#FFE900"
+          color: "#ffe900"
+        },
+        messages: [
+          {
+            fromDate: null,
+            toDate: null,
+            message: "Comming Soon!",
+            countdownTo: null
+          }
+        ]
+      },
+      {
+        slug: "mandalorian",
+        title: "The Mandalorian",
+        logo: null,
+        style: {
+          backgroundImage:
+            'url("/img/assets/mandalorian/mandalorian_background.jpg")',
+          backgroundSize: "cover",
+          color: "#ffffff"
         },
         messages: [
           {
