@@ -2,10 +2,10 @@
   <div class="timer" :style="timer.style">
     <div class="container">
       <div class="logo">
-        <img :srcset="timer.logo" alt="Event logo"/>
+        <img v-if="timer.logo" :srcset="timer.logo" alt="Event logo" />
       </div>
       <Countdown
-        v-if="currentMessage.countdownTo != null"
+        v-if="currentMessage.countdownTo"
         :dateInUTC="currentMessage.countdownTo"
       />
       <div v-else class="message">
