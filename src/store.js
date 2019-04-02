@@ -9,9 +9,9 @@ export default new Vuex.Store({
       {
         slug: "episode9",
         title: "Star Wars Episode 9",
-        logo: "/images/episode_9/episode_9_logo_vector.svg",
+        logo: "/img/assets/episode_9/episode_9_logo_vector.svg",
         style: {
-          backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
+          backgroundImage: 'url("/img/assets/episode_9/starfield_tile.png")',
           backgroundRepeat: "repeat",
           color: "white"
         },
@@ -27,9 +27,11 @@ export default new Vuex.Store({
       {
         slug: "celebration2019",
         title: "Star Wars Celebration 2019",
-        logo: "/images/celebration_2019/celebration_2019_vector.svg",
+        logo: "/img/assets/celebration_2019/celebration_2019_vector.svg",
         style: {
-          backgroundColor: "black",
+          backgroundImage:
+            'url("/img/assets/celebration_2019/celebration_2019_background.png")',
+          backgroundSize: "cover",
           color: "#FFE900"
         },
         messages: [
@@ -56,9 +58,11 @@ export default new Vuex.Store({
       {
         slug: "clonewars",
         title: "Star Wars The Clone Wars",
-        logo: "/images/clone_wars/clone_wars_logo.svg",
+        logo: "/img/assets/clone_wars/clone_wars_logo.svg",
         style: {
-          backgroundImage: 'url("/images/episode_9/starfield_tile.png")',
+          backgroundImage:
+            'url("/img/assets/clone_wars/clone_wars_background.jpg")',
+          backgroundSize: "cover",
           color: "#FFE900"
         },
         messages: [
