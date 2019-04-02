@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "countdown": "^2.6.0",
+    "moment": "^2.24.0",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
     "vue-meta": "^1.6.0",

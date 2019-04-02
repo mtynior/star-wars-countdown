@@ -6,7 +6,7 @@
       </div>
       <Countdown
         v-if="currentMessage.countdownTo"
-        :dateInUTC="currentMessage.countdownTo"
+        :dateInUTC="new Date(currentMessage.countdownTo)"
       />
       <div v-else class="message">
         <h1>{{ currentMessage.message }}</h1>

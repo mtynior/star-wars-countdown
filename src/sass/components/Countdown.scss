@@ -1,50 +1,67 @@
 .countdown {
   padding: 0 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
-  align-items: center;
-
-  .timeFraction {
-    display: flex;
-    flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
+  
+  .timer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px, 1fr));
     align-items: center;
-    justify-content: center;
 
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 8rem;
-      
-      @include breakpoint(md) {
-        font-size: 6.5rem;
+    .timeFraction {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 8rem;
+        
+        @include breakpoint(md) {
+          font-size: 6.5rem;
+        }
+  
+        @include breakpoint(sm) {
+          font-size: 4.0rem;
+        }
+  
+        @include breakpoint(xs) {
+          font-size: 2.5rem;
+        }
+  
       }
-
-      @include breakpoint(sm) {
-        font-size: 4.0rem;
+  
+      span {
+        font-size: $font-size-xl;
+  
+        @include breakpoint(md) {
+          font-size: $font-size-lg;
+        }
+  
+        @include breakpoint(sm) {
+          font-size: $font-size-base;
+        }
+        
+        @include breakpoint(xs) {
+          font-size: $font-size-sm;
+        }
+  
       }
-
-      @include breakpoint(xs) {
-        font-size: 2.5rem;
-      }
-
-    }
-
-    span {
-      font-size: $font-size-xl;
-
-      @include breakpoint(md) {
-        font-size: $font-size-lg;
-      }
-
-      @include breakpoint(sm) {
-        font-size: $font-size-base;
-      }
-      
-      @include breakpoint(xs) {
-        font-size: $font-size-sm;
-      }
-
+  
     }
 
   }
+
+  .date {
+    padding: 3rem 0 0 0rem;
+    text-align: center;
+
+    h5 {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
 }
