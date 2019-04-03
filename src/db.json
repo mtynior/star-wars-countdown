@@ -23,7 +23,7 @@
     "logo": "/img/assets/celebration_2019/celebration_2019_vector.svg",
     "style": {
       "backgroundImage":
-        "url('/img/assets/celebration_2019/celebration_2019_background.webp')",
+        "url('/img/assets/celebration_2019/celebration_2019_background.jpg')",
       "backgroundSize": "cover",
       "color": "#ffe900"
     },
@@ -54,8 +54,9 @@
     "logo": "/img/assets/clone_wars/clone_wars_logo.svg",
     "style": {
       "backgroundImage":
-        "url('img/assets/clone_wars/clone_wars_background.webp')",
+        "url('img/assets/clone_wars/clone_wars_background.jpg')",
       "backgroundSize": "cover",
+      "backgroundPosition": "center center",
       "color": "#ffe900"
     },
     "messages": [
@@ -73,8 +74,9 @@
     "logo": null,
     "style": {
       "backgroundImage":
-        "url('/img/assets/mandalorian/mandalorian_background.webp')",
+        "url('/img/assets/mandalorian/mandalorian_background.jpg')",
       "backgroundSize": "cover",
+      "backgroundPosition": "center center",
       "color": "#ffffff"
     },
     "messages": [
