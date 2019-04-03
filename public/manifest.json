@@ -1,7 +1,8 @@
 {
   "name": "Star Wars Countdown",
   "short_name": "Star Wars Countdown",
-  "start_url": "./index.html",
+  "author": "Michal Tynior",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#151515",
   "theme_color": "#151515",
