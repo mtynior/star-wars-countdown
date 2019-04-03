@@ -20,7 +20,7 @@ export default {
     Footer
   },
   metaInfo: {
-    title: "Page not found",
+    title: "Page not found"
   },
   computed: {
     visibleTimers() {
