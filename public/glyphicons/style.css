@@ -17,6 +17,7 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
+  font-display: fallback;
   line-height: 1;
 
   /* Better Font Rendering =========== */
