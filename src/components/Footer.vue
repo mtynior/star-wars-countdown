@@ -2,28 +2,14 @@
   <div class="footer">
     <div class="links">
       <a
-        href="http://www.starwars.com/"
+        v-for="link in links"
+        :key="link.url"
+        :href="link.url"
         target="_blank"
         rel="noopener"
-        aria-label="Visit official Star Wars website"
+        :aria-label="link.description"
       >
-        <i class="swc-star-wars"></i>
-      </a>
-      <a
-        href="https://tynior.com/"
-        target="_blank"
-        rel="noopener"
-        aria-label="Visit author's personal website"
-      >
-        <i class="swc-qeltive"></i>
-      </a>
-      <a
-        href="https://github.com/mtynior/star-wars-countdown"
-        target="_blank"
-        rel="noopener"
-        aria-label="Checkout project's source code"
-      >
-        <i class="swc-github"></i>
+        <i :class="link.icon"></i>
       </a>
     </div>
     <div>
@@ -37,7 +23,28 @@
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  data() {
+    return {
+      links: [
+        {
+          url: "http://www.starwars.com/",
+          icon: "swc-star-wars",
+          description: "Visit official Star Wars website"
+        },
+        {
+          url: "https://tynior.com/",
+          icon: "swc-qeltive",
+          description: "Visit author's personal website"
+        },
+        {
+          url: "https://github.com/mtynior/star-wars-countdown",
+          icon: "swc-github",
+          description: "Checkout project's source code"
+        }
+      ]
+    };
+  }
 };
 </script>
 

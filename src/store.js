@@ -3,7 +3,7 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
-var timers_db = require("./db.json");
+let timers_db = require("./db.json");
 
 export default new Vuex.Store({
   state: {
@@ -20,21 +20,32 @@ export default new Vuex.Store({
       referenceDate
     ) => {
       let timer = getters.getTimerBySlug(slug);
+
       return timer.messages.find(message => {
         let fromDate = message.fromDate ? new Date(message.fromDate) : null;
         let toDate = message.toDate ? new Date(message.toDate) : null;
 
-        if (fromDate <= referenceDate && referenceDate <= toDate) {
+        let isWithinSpecifiedRage =
+          fromDate <= referenceDate && referenceDate <= toDate;
+
+        let isWithinRageWithoutDefinedStart =
+          !fromDate && referenceDate <= toDate;
+
+        let isWithinRageWithoutDefinedEnd =
+          fromDate <= referenceDate && !toDate;
+
+        let isRangeNotSpeciefied = !fromDate && !toDate;
+
+        if (
+          isWithinSpecifiedRage ||
+          isWithinRageWithoutDefinedStart ||
+          isWithinRageWithoutDefinedEnd ||
+          isRangeNotSpeciefied
+        ) {
           return true;
-        } else if (!fromDate && referenceDate <= toDate) {
-          return true;
-        } else if (fromDate <= referenceDate && !toDate) {
-          return true;
-        } else if (!fromDate && !toDate) {
-          return true;
-        } else {
-          return false;
         }
+
+        return false;
       });
     }
   },

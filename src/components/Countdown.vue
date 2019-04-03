@@ -26,8 +26,7 @@
 
 <script>
 import moment from "moment";
-
-var countdown = require("countdown");
+import countdown from "countdown";
 
 export default {
   name: "Countdown",
