@@ -16,12 +16,14 @@ module.exports = {
       skipWaiting: true,
       runtimeCaching: [
         {
-          urlPattern: new RegExp(
-            /\.(?:json|png|jpg|jpeg|gif|webp|ico|svg|eot|ttf|woff)$/
-          ),
+          urlPattern: /\.(?:png|jpg|jpeg|gif|webp|ico|svg|eot|ttf|woff)$/,
           handler: "cacheFirst",
           options: {
-            cacheName: "swc-assets"
+            cacheName: "swc-assets",
+            expiration: {
+              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+              purgeOnQuotaError: true
+            }
           }
         }
       ]
