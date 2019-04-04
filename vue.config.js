@@ -16,7 +16,7 @@ module.exports = {
       skipWaiting: true,
       runtimeCaching: [
         {
-          urlPattern: new RegExp("/\\.(?:png|gif|jpg|jpeg|svg|eot|ttf|woff)$/"),
+          urlPattern: new RegExp(/\.(?:png|gif|jpg|jpeg|svg|eot|ttf|woff)$/),
           handler: "cacheFirst",
           options: {
             cacheName: "assets"
