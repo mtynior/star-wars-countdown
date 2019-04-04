@@ -16,7 +16,7 @@ module.exports = {
       skipWaiting: true,
       runtimeCaching: [
         {
-          urlPattern: /.*\.(?:svg|jpg|jpeg|gif|webp|ico|png|eot|ttf|woff)$/,
+          urlPattern: /.*/,
           handler: "cacheFirst",
           options: {
             cacheName: "swc-assets",
