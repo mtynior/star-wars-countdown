@@ -20,7 +20,7 @@
   {
     "slug": "celebration2019",
     "title": "Star Wars Celebration 2019",
-    "logo": "/img/assets/celebration_2019/celebration_2019_vector.sv",
+    "logo": "/img/assets/celebration_2019/celebration_2019_vector.svg",
     "style": {
       "backgroundImage": "url('/img/assets/celebration_2019/celebration_2019_background.jpg')",
       "backgroundSize": "cover",
