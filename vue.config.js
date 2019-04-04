@@ -14,9 +14,6 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: "black-translucent",
     workboxOptions: {
       skipWaiting: true,
-      globPatterns: [
-        "**/*.{sample, html, json, js, css, map, png, jpg, jpeg, gif, webp, ico, svg, eot, ttf, woff}"
-      ],
       runtimeCaching: [
         {
           urlPattern: new RegExp(
