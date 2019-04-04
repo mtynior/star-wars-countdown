@@ -14,12 +14,18 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: "black-translucent",
     workboxOptions: {
       skipWaiting: true,
+      globDirectory: "dist/",
+      globPatterns: [
+        "**/*.{sample, html, json, js, css, map, png, jpg, jpeg, gif, webp, ico, svg, eot, ttf, woff}"
+      ],
       runtimeCaching: [
         {
-          urlPattern: new RegExp(/\.(?:png|gif|jpg|jpeg|svg|eot|ttf|woff)$/),
+          urlPattern: new RegExp(
+            /\.(?:json|png|jpg|jpeg|gif|webp|ico|svg|eot|ttf|woff)$/
+          ),
           handler: "cacheFirst",
           options: {
-            cacheName: "assets"
+            cacheName: "swc-assets"
           }
         }
       ]
