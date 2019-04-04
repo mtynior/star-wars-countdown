@@ -22,26 +22,25 @@
     "title": "Star Wars Celebration 2019",
     "logo": "/img/assets/celebration_2019/celebration_2019_vector.svg",
     "style": {
-      "backgroundImage":
-        "url('/img/assets/celebration_2019/celebration_2019_background.jpg')",
+      "backgroundImage": "url('/img/assets/celebration_2019/celebration_2019_background.jpg')",
       "backgroundSize": "cover",
       "color": "#ffe900"
     },
     "messages": [
       {
         "fromDate": null,
-        "toDate": "2019-04-11T12:00:00Z",
+        "toDate": "2019-04-11T18:00:00Z",
         "message": null,
-        "countdownTo": "2019-04-11T12:00:00Z"
+        "countdownTo": "2019-04-11T18:00:00Z"
       },
       {
-        "fromDate": "2019-04-11T12:00:00Z",
-        "toDate": "2019-04-15T12:00:00Z",
+        "fromDate": "2019-04-11T18:00:00Z",
+        "toDate": "2019-04-15T18:00:00Z",
         "message": "It's happening right now!",
         "countdownTo": null
       },
       {
-        "fromDate": "2019-04-15T12:00:00Z",
+        "fromDate": "2019-04-15T18:00:00Z",
         "toDate": null,
         "message": "It's over :(",
         "countdownTo": null
@@ -53,8 +52,7 @@
     "title": "Star Wars The Clone Wars",
     "logo": "/img/assets/clone_wars/clone_wars_logo.svg",
     "style": {
-      "backgroundImage":
-        "url('img/assets/clone_wars/clone_wars_background.jpg')",
+      "backgroundImage": "url('img/assets/clone_wars/clone_wars_background.jpg')",
       "backgroundSize": "cover",
       "backgroundPosition": "center center",
       "color": "#ffe900"
@@ -63,7 +61,7 @@
       {
         "fromDate": null,
         "toDate": null,
-        "message": "Comming Soon!",
+        "message": "Coming Soon!",
         "countdownTo": null
       }
     ]
@@ -73,8 +71,7 @@
     "title": "The Mandalorian",
     "logo": null,
     "style": {
-      "backgroundImage":
-        "url('/img/assets/mandalorian/mandalorian_background.jpg')",
+      "backgroundImage": "url('/img/assets/mandalorian/mandalorian_background.jpg')",
       "backgroundSize": "cover",
       "backgroundPosition": "center center",
       "color": "#ffffff"
@@ -83,7 +80,7 @@
       {
         "fromDate": null,
         "toDate": null,
-        "message": "Comming Soon!",
+        "message": "Coming Soon!",
         "countdownTo": null
       }
     ]
