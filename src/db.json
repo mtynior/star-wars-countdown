@@ -29,9 +29,9 @@
     "messages": [
       {
         "fromDate": null,
-        "toDate": "2019-04-11T18:00:00Z",
+        "toDate": "2019-04-11T12:00:00Z",
         "message": null,
-        "countdownTo": "2019-04-11T18:00:00Z"
+        "countdownTo": "2019-04-11T12:00:00Z"
       },
       {
         "fromDate": "2019-04-11T18:00:00Z",
