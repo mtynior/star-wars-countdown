@@ -25,7 +25,7 @@ module.exports = {
           options: {
             cacheName: "swc-assets",
             expiration: {
-              maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+              maxAgeSeconds: 5 * 24 * 60 * 60, // 5 days
               purgeOnQuotaError: true
             }
           }
