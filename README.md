@@ -4,7 +4,7 @@ Star Wars Countdown PWA application built with Vue 2.x + vue-router + vuex.
 
 <p align="center">
   <a href="https://starwarscountdown.online" target="_blank">
-    <img src="https://user-images.githubusercontent.com/6362174/55625430-08c92400-57a9-11e9-881b-cab54bd5844d.png" width="700px">
+    <img src="https://user-images.githubusercontent.com/6362174/55625430-08c92400-57a9-11e9-881b-cab54bd5844d.png" width="900px">
     <br>
     Live Site
   </a>
