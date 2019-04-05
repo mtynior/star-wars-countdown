@@ -4,7 +4,7 @@ Star Wars Countdown PWA application built with Vue 2.x + vue-router + vuex.
 
 <p align="center">
   <a href="https://starwarscountdown.online" target="_blank">
-    <img src="https://user-images.githubusercontent.com/6362174/55622090-93a52100-579f-11e9-9e16-b120070fcc0c.png" width="700px">
+    <img src="https://user-images.githubusercontent.com/6362174/55625430-08c92400-57a9-11e9-881b-cab54bd5844d.png" width="700px">
     <br>
     Live Site
   </a>
@@ -13,17 +13,23 @@ Star Wars Countdown PWA application built with Vue 2.x + vue-router + vuex.
 ## Build Setup
 
 ```bash
-# install dependencies
-npm install # or yarn
+# Project setup
+yarn install
 
-# serve in dev mode, with hot reload at localhost:8080
-npm run dev
+# Compiles and hot-reloads for development
+yarn run serve
 
-# build for production
-npm run build
+# Compiles and minifies for production
+yarn run build
 
-# serve in production mode
-npm start
+# Lints and fixes files
+yarn run lint
+
+# Run tests
+yarn run  test
+
+# Run unit tests
+yarn run test:unit
 ```
 
 ## License
