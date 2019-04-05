@@ -14,6 +14,10 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: "black-translucent",
     workboxOptions: {
       skipWaiting: true,
+      clientsClaim: true,
+      cacheId: "swc",
+      navigateFallback: "index.html",
+      exclude: [/_redirects/, /robots.txt/],
       runtimeCaching: [
         {
           urlPattern: /.*\.(?:png|jpg|jpeg|gif|webp|ico|svg|eot|ttf|woff|json)$/,
