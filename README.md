@@ -1,34 +1,31 @@
-# star-wars-countdown
+# Star Wars Countdown
 
-## Project setup
-```
-yarn install
-```
+Star Wars Countdown PWA application built with Vue 2.x + vue-router + vuex.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+<p align="center">
+  <a href="https://starwarscountdown.online" target="_blank">
+    <img src="https://user-images.githubusercontent.com/6362174/55622090-93a52100-579f-11e9-9e16-b120070fcc0c.png" width="700px">
+    <br>
+    Live Site
+  </a>
+</p>
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+## Build Setup
 
-### Run your tests
-```
-yarn run test
-```
+```bash
+# install dependencies
+npm install # or yarn
 
-### Lints and fixes files
-```
-yarn run lint
-```
+# serve in dev mode, with hot reload at localhost:8080
+npm run dev
 
-### Run your unit tests
-```
-yarn run test:unit
+# build for production
+npm run build
+
+# serve in production mode
+npm start
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+Star Wars Countdown is released under the MIT license. See LICENSE for details.
