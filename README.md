@@ -1,4 +1,4 @@
-<h1 align="center"> Star Wars Countdown<h1>
+<h1 align="center"> Star Wars Countdown</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/vue-2.2-green.svg" />
