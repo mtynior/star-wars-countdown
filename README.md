@@ -1,6 +1,12 @@
-# Star Wars Countdown
+<h1 align="center"> Star Wars Countdown<h1>
 
-Star Wars Countdown PWA application built with Vue 2.x + vue-router + vuex.
+<p align="center">
+  <img src="https://img.shields.io/badge/vue-2.2-green.svg" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
+  <img src="https://img.shields.io/github/languages/top/mtynior/star-wars-countdown.svg" />
+</p>
+
+<p align="center">Star Wars Countdown is a PWA application built with Vue 2.x + vue-router + vuex.</p>
 
 <p align="center">
   <a href="https://starwarscountdown.online" target="_blank">
