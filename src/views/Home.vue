@@ -1,18 +1,45 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <Timer :timer="currentTimer" />
+    <TileGrid :timers="visibleTimers" class="timersGrid" />
+    <Footer />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import Timer from "@/components/Timer.vue";
+import TileGrid from "@/components/TileGrid.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "home",
+  metaInfo() {
+    return {
+      title: this.currentTimer.title
+    };
+  },
   components: {
-    HelloWorld
+    Timer,
+    TileGrid,
+    Footer
+  },
+  computed: {
+    currentTimer() {
+      let slug = this.$route.params.slug;
+
+      if (!slug || slug.length === 0) {
+        return this.$store.getters.TIMERS[0];
+      }
+
+      return this.$store.getters.getTimerBySlug(slug);
+    },
+    visibleTimers() {
+      return this.$store.getters.TIMERS.filter(
+        timer => timer.slug != this.currentTimer.slug
+      );
+    }
   }
 };
 </script>
+
+<style lang="scss" scoped src="@/sass/views/Home.scss" />

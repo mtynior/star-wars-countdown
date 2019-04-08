@@ -1,0 +1,8 @@
+.tileGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 320px));
+    grid-row-gap: 2rem;
+    grid-column-gap: 3rem;
+    resize: horizontal;
+    justify-content: center;
+}

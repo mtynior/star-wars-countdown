@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "star-wars-countdown";
+  src: url("fonts/star-wars-countdown.eot");
+  src: url("fonts/star-wars-countdown.eot?#iefix") format("embedded-opentype"),
+    url("fonts/star-wars-countdown.ttf") format("truetype"),
+    url("fonts/star-wars-countdown.woff") format("woff"),
+    url("fonts/star-wars-countdown.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="swc-"],
+[class*=" swc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "star-wars-countdown" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  font-display: fallback;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.swc-qeltive:before {
+  content: "\e900";
+}
+.swc-star-wars:before {
+  content: "\e901";
+}
+.swc-github:before {
+  content: "\eab0";
+}

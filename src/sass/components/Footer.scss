@@ -1,0 +1,38 @@
+.footer {
+  padding: 1rem;
+  color: $oslo-gray;
+  font-size: $font-size-xs;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  text-align: center;
+  justify-items: center;
+  align-items: end;
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+
+    @include breakpoint(sm) {
+      width: 75%;
+    }
+
+    @include breakpoint(xs) {
+      width: 100%;
+    }
+
+    a {
+      color: $link-color;
+      text-decoration: none;
+      font-size: $font-size-xl;
+
+      &:hover {
+        color: $link-hover-color;
+      }
+
+    }
+  }
+}

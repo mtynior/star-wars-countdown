@@ -1,0 +1,3 @@
+# Redirects file required by Netlify for SPA applications. More info at https://www.netlify.com/docs/redirects/#rewrites-and-proxying
+
+/*    /index.html   200

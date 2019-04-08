@@ -1,6 +1,12 @@
 {
-  "name": "star-wars-countdown",
-  "short_name": "star-wars-countdown",
+  "name": "Star Wars Countdown",
+  "short_name": "Star Wars Countdown",
+  "author": "Michal Tynior",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#151515",
+
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -12,9 +18,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": "./index.html",
-  "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#4DBA87"
+  ]
 }

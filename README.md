@@ -1,34 +1,45 @@
-# star-wars-countdown
+<h1 align="center"> Star Wars Countdown</h1>
 
-## Project setup
-```
+<p align="center">
+  <img src="https://img.shields.io/badge/Made%20with-Vue.js-64b587.svg" />
+  <img src="https://img.shields.io/badge/vue-2.2-success.svg" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
+  <img src="https://img.shields.io/website-up-down-green-red/http/starwarscountdown.online.svg" />
+
+</p>
+
+<p align="center">Star Wars Countdown is a PWA application built with Vue 2.x + vue-router + vuex.</p>
+
+<p align="center">
+  <a href="https://starwarscountdown.online" target="_blank">
+    <img src="https://user-images.githubusercontent.com/6362174/55625430-08c92400-57a9-11e9-881b-cab54bd5844d.png" width="900px">
+    <br>
+    Live Site
+  </a>
+</p>
+
+## Build Setup
+
+```bash
+# Project setup
 yarn install
-```
 
-### Compiles and hot-reloads for development
-```
+# Compiles and hot-reloads for development
 yarn run serve
-```
 
-### Compiles and minifies for production
-```
+# Compiles and minifies for production
 yarn run build
-```
 
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
+# Lints and fixes files
 yarn run lint
-```
 
-### Run your unit tests
-```
+# Run tests
+yarn run  test
+
+# Run unit tests
 yarn run test:unit
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## License
+
+Star Wars Countdown is released under the MIT license. See LICENSE for details.
