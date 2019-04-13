@@ -37,7 +37,7 @@ export default {
         {
           name: "og:url",
           content: this.$route.fullPath,
-          template: "https://starwarscountdown.online%s"
+          template: this.baseUrl + "%s"
         },
         {
           name: "og:type",
@@ -54,6 +54,10 @@ export default {
         {
           name: "twitter:card",
           content: "summary_large_image"
+        },
+        {
+          name: "twitter:image",
+          content: this.baseUrl + "/img/icons/apple-touch-icon-152x152.png"
         }
       ]
     };
@@ -83,6 +87,9 @@ export default {
     },
     pageTitle() {
       return "Star Wars Countdown | " + this.currentTimer.title;
+    },
+    baseUrl() {
+      return "https://starwarscountdown.online";
     }
   }
 };
