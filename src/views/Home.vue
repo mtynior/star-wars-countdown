@@ -100,7 +100,7 @@ export default {
       return "Star Wars Countdown | " + this.currentTimer.title;
     },
     baseUrl() {
-      return window.location.host;
+      return window.location.origin;
     },
     fullUrl() {
       return  this.baseUrl + this.$route.fullPath;
