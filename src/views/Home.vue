@@ -15,7 +15,43 @@ export default {
   name: "home",
   metaInfo() {
     return {
-      title: this.currentTimer.title
+      title: this.pageTitle,
+      titleTemplate: null,
+      meta: [
+        {
+          name: "description",
+          content: this.pageDescription
+        },
+        {
+          name: "og:description",
+          content: this.pageDescription
+        },
+        {
+          name: "og:title",
+          content: this.pageTitle
+        },
+        {
+          name: "og:site_name",
+          content: this.pageTitle
+        },
+        {
+          name: "og:url",
+          content: this.$route.fullPath,
+          template: "https://starwarscountdown.online%s"
+        },
+        {
+          name: "og:type",
+          content: "website"
+        },
+        {
+          name: "twitter:description",
+          content: this.pageDescription
+        },
+        {
+          name: "twitter:title",
+          content: this.pageTitle
+        }
+      ]
     };
   },
   components: {
@@ -37,6 +73,12 @@ export default {
       return this.$store.getters.TIMERS.filter(
         timer => timer.slug != this.currentTimer.slug
       );
+    },
+    pageDescription() {
+      return "How many days until " + this.currentTimer.title + "?";
+    },
+    pageTitle() {
+      return "Star Wars Countdown | " + this.currentTimer.title;
     }
   }
 };
