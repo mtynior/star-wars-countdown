@@ -39,6 +39,10 @@ export default {
           content: this.fullUrl
         },
         {
+          name: "og:image",
+          content: this.baseUrl + "/img/icons/apple-touch-icon-152x152.png"
+        },
+        {
           name: "og:type",
           content: "website"
         },
