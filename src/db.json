@@ -1,7 +1,7 @@
 [
   {
     "slug": "episode9",
-    "title": "Star Wars Episode 9",
+    "title": "Star Wars: Episode IX The Rise of Skywalker",
     "logo": "/img/assets/episode_9/episode_9_logo_official.svg",
     "style": {
       "backgroundImage": "url('/img/assets/episode_9/starfield_tile.png')",
@@ -49,7 +49,7 @@
   },
   {
     "slug": "clonewars",
-    "title": "Star Wars The Clone Wars",
+    "title": "Star Wars: The Clone Wars",
     "logo": "/img/assets/clone_wars/clone_wars_logo.svg",
     "style": {
       "backgroundImage": "url('img/assets/clone_wars/clone_wars_background.jpg')",
@@ -87,6 +87,31 @@
         "fromDate": "2019-11-12T11:00:00Z",
         "toDate": null,
         "message": "Available on Disney+",
+        "countdownTo": null
+      }
+    ]
+  },
+  {
+    "slug": "jedi-fallen-order",
+    "title": "Star Wars: Jedi Fallen Order",
+    "logo": "/img/assets/jedi_fallen_order/jedi_fallen_order_logo_hero.svg",
+    "style": {
+      "backgroundImage": "url('/img/assets/jedi_fallen_order/jedi_fallen_order_saber_on_stone.jpg')",
+      "backgroundSize": "cover",
+      "backgroundPosition": "center center",
+      "color": "#ffffff"
+    },
+    "messages": [
+      {
+        "fromDate": null,
+        "toDate": "2019-11-14T23:00:00Z",
+        "message": null,
+        "countdownTo": "2019-11-14T23:00:00Z"
+      },
+      {
+        "fromDate": "2019-11-14T23:00:00Z",
+        "toDate": null,
+        "message": "Available now!",
         "countdownTo": null
       }
     ]
