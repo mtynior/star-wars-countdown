@@ -50,6 +50,10 @@ export default {
         {
           name: "twitter:title",
           content: this.pageTitle
+        },
+        {
+          name: "twitter:card",
+          content: "summary_large_image"
         }
       ]
     };
