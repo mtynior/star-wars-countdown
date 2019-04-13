@@ -36,27 +36,30 @@ export default {
         },
         {
           name: "og:url",
-          content: this.$route.fullPath,
-          template: this.baseUrl + "%s"
+          content: this.fullUrl
         },
         {
           name: "og:type",
           content: "website"
         },
         {
-          name: "twitter:description",
-          content: this.pageDescription
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          name: "twitter:site",
+          content: this.fullUrl
         },
         {
           name: "twitter:title",
           content: this.pageTitle
         },
         {
-          name: "twitter:card",
-          content: "summary_large_image"
+          name: "twitter:description",
+          content: this.pageDescription
         },
         {
-          name: "twitter:image",
+          name: "twitter:image:src",
           content: this.baseUrl + "/img/icons/apple-touch-icon-152x152.png"
         }
       ]
@@ -90,6 +93,9 @@ export default {
     },
     baseUrl() {
       return "https://starwarscountdown.online";
+    },
+    fullUrl() {
+      return "https://starwarscountdown.online" + this.$route.fullPath;
     }
   }
 };
