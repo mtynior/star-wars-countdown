@@ -2,7 +2,7 @@
   {
     "slug": "episode9",
     "title": "Star Wars Episode 9",
-    "logo": "/img/assets/episode_9/episode_9_logo_vector.svg",
+    "logo": "/img/assets/episode_9/episode_9_logo_official.svg",
     "style": {
       "backgroundImage": "url('/img/assets/episode_9/starfield_tile.png')",
       "backgroundRepeat": "repeat",
