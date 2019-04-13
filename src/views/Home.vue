@@ -17,6 +17,10 @@ export default {
     return {
       title: this.pageTitle,
       titleTemplate: null,
+      link: [
+      { 
+        rel: "canonical", href: this.fullUrl },
+      ],
       meta: [
         {
           name: "description",
@@ -96,10 +100,10 @@ export default {
       return "Star Wars Countdown | " + this.currentTimer.title;
     },
     baseUrl() {
-      return "https://starwarscountdown.online";
+      return window.location.host;
     },
     fullUrl() {
-      return "https://starwarscountdown.online" + this.$route.fullPath;
+      return  this.baseUrl + this.$route.fullPath;
     }
   }
 };
