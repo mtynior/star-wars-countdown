@@ -15,7 +15,62 @@ export default {
   name: "home",
   metaInfo() {
     return {
-      title: this.currentTimer.title
+      title: this.pageTitle,
+      titleTemplate: null,
+      link: [
+      { 
+        rel: "canonical", href: this.fullUrl },
+      ],
+      meta: [
+        {
+          name: "description",
+          content: this.pageDescription
+        },
+        {
+          name: "og:description",
+          content: this.pageDescription
+        },
+        {
+          name: "og:title",
+          content: this.pageTitle
+        },
+        {
+          name: "og:site_name",
+          content: this.pageTitle
+        },
+        {
+          name: "og:url",
+          content: this.fullUrl
+        },
+        {
+          name: "og:image",
+          content: this.baseUrl + "/img/icons/apple-touch-icon-152x152.png"
+        },
+        {
+          name: "og:type",
+          content: "website"
+        },
+        {
+          name: "twitter:card",
+          content: "summary"
+        },
+        {
+          name: "twitter:site",
+          content: this.fullUrl
+        },
+        {
+          name: "twitter:title",
+          content: this.pageTitle
+        },
+        {
+          name: "twitter:description",
+          content: this.pageDescription
+        },
+        {
+          name: "twitter:image:src",
+          content: this.baseUrl + "/img/icons/apple-touch-icon-152x152.png"
+        }
+      ]
     };
   },
   components: {
@@ -37,6 +92,18 @@ export default {
       return this.$store.getters.TIMERS.filter(
         timer => timer.slug != this.currentTimer.slug
       );
+    },
+    pageDescription() {
+      return "How many days until " + this.currentTimer.title + "?";
+    },
+    pageTitle() {
+      return "Star Wars Countdown | " + this.currentTimer.title;
+    },
+    baseUrl() {
+      return window.location.origin;
+    },
+    fullUrl() {
+      return  this.baseUrl + this.$route.fullPath;
     }
   }
 };
