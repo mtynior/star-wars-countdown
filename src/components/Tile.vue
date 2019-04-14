@@ -2,7 +2,7 @@
   <div class="tile">
     <router-link :to="timer.slug">
       <header class="miniature" :style="timer.style">
-        <img class="logo" :src="timer.logo" alt="Tile logo" />
+        <img class="logo" :src="timer.logo" :alt="timer.title" />
       </header>
       <footer class="caption">
         <span>{{ timer.title }}</span>

@@ -6,7 +6,7 @@
     "style": {
       "backgroundImage": "url('/img/assets/episode_9/starfield_tile.png')",
       "backgroundRepeat": "repeat",
-      "color": "ffffff"
+      "color": "#ffffff"
     },
     "messages": [
       {
@@ -69,12 +69,10 @@
   {
     "slug": "mandalorian",
     "title": "The Mandalorian",
-    "logo": null,
+    "logo": "/img/assets/mandalorian/mandalorian_logo_tatooine.jpg",
     "style": {
-      "backgroundImage": "url('/img/assets/mandalorian/mandalorian_background.jpg')",
-      "backgroundSize": "cover",
-      "backgroundPosition": "center center",
-      "color": "#ffffff"
+      "background": "#000000",
+      "color": "#d69763"
     },
     "messages": [
       {
