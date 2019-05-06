@@ -89,8 +89,8 @@
     "title": "Star Wars Celebration 2020",
     "logo": "/img/assets/celebration_2020/celebration_2020_logo_unofficial.svg",
     "style": {
-      "backgroundImage": "url('/img/assets/celebration_2020/celebration_2019_background.jpg')",
-      "backgroundSize": "cover",
+      "backgroundImage": "url('/img/assets/celebration_2020/starfield_tile.png')",
+      "backgroundRepeat": "repeat",
       "color": "#ffffff"
     },
     "messages": [
