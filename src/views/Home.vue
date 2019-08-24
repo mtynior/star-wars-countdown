@@ -18,8 +18,10 @@ export default {
       title: this.pageTitle,
       titleTemplate: null,
       link: [
-      { 
-        rel: "canonical", href: this.fullUrl },
+        {
+          rel: "canonical",
+          href: this.fullUrl
+        }
       ],
       meta: [
         {
@@ -103,7 +105,7 @@ export default {
       return window.location.origin;
     },
     fullUrl() {
-      return  this.baseUrl + this.$route.fullPath;
+      return this.baseUrl + this.$route.fullPath;
     }
   }
 };
