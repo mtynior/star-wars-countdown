@@ -18,36 +18,6 @@
     ]
   },
   {
-    "slug": "celebration2019",
-    "title": "Star Wars Celebration 2019",
-    "logo": "/img/assets/celebration_2019/celebration_2019_vector.svg",
-    "style": {
-      "backgroundImage": "url('/img/assets/celebration_2019/celebration_2019_background.jpg')",
-      "backgroundSize": "cover",
-      "color": "#ffe900"
-    },
-    "messages": [
-      {
-        "fromDate": null,
-        "toDate": "2019-04-11T18:00:00Z",
-        "message": null,
-        "countdownTo": "2019-04-11T18:00:00Z"
-      },
-      {
-        "fromDate": "2019-04-11T18:00:00Z",
-        "toDate": "2019-04-15T18:00:00Z",
-        "message": "It's happening right now!",
-        "countdownTo": null
-      },
-      {
-        "fromDate": "2019-04-15T18:00:00Z",
-        "toDate": null,
-        "message": "It's over :(",
-        "countdownTo": null
-      }
-    ]
-  },
-  {
     "slug": "clonewars",
     "title": "Star Wars: The Clone Wars",
     "logo": "/img/assets/clone_wars/clone_wars_logo.svg",
@@ -111,6 +81,36 @@
         "toDate": null,
         "message": "Available now!",
         "countdownTo": null
+      }
+    ]
+  },
+  {
+    "slug": "celebration2020",
+    "title": "Star Wars Celebration 2020",
+    "logo": "/img/assets/celebration_2020/celebration_2020_logo_unofficial.svg",
+    "style": {
+      "backgroundImage": "url('/img/assets/celebration_2020/starfield_tile.png')",
+      "backgroundRepeat": "repeat",
+      "color": "#ffffff"
+    },
+    "messages": [
+      {	
+        "fromDate": null,	
+        "toDate": "2020-08-27T18:00:00Z",	
+        "message": null,	
+        "countdownTo": "2020-08-27T18:00:00Z"	
+      },	
+      {	
+        "fromDate": "2020-08-27T18:00:00Z",	
+        "toDate": "2020-08-30T18:00:00Z",	
+        "message": "It's happening right now!",	
+        "countdownTo": null	
+      },	
+      {	
+        "fromDate": "2020-08-30T18:00:00Z",	
+        "toDate": null,	
+        "message": "It's over :(",	
+        "countdownTo": null	
       }
     ]
   }
