@@ -18,25 +18,6 @@
     ]
   },
   {
-    "slug": "clonewars",
-    "title": "Star Wars: The Clone Wars",
-    "logo": "/img/assets/clone_wars/clone_wars_logo.svg",
-    "style": {
-      "backgroundImage": "url('img/assets/clone_wars/clone_wars_background.jpg')",
-      "backgroundSize": "cover",
-      "backgroundPosition": "center center",
-      "color": "#ffe900"
-    },
-    "messages": [
-      {
-        "fromDate": null,
-        "toDate": null,
-        "message": "Coming Soon!",
-        "countdownTo": null
-      }
-    ]
-  },
-  {
     "slug": "mandalorian",
     "title": "The Mandalorian",
     "logo": "/img/assets/mandalorian/mandalorian_logo_tatooine.jpg",
@@ -55,6 +36,25 @@
         "fromDate": "2019-11-12T11:00:00Z",
         "toDate": null,
         "message": "Available on Disney+",
+        "countdownTo": null
+      }
+    ]
+  },
+  {
+    "slug": "clonewars",
+    "title": "Star Wars: The Clone Wars",
+    "logo": "/img/assets/clone_wars/clone_wars_logo.svg",
+    "style": {
+      "backgroundImage": "url('img/assets/clone_wars/clone_wars_background.jpg')",
+      "backgroundSize": "cover",
+      "backgroundPosition": "center center",
+      "color": "#ffe900"
+    },
+    "messages": [
+      {
+        "fromDate": null,
+        "toDate": null,
+        "message": "February 2020!",
         "countdownTo": null
       }
     ]
