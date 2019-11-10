@@ -28,12 +28,18 @@
     "messages": [
       {
         "fromDate": null,
-        "toDate": "2019-11-12T11:00:00Z",
+        "toDate": "2019-11-12T00:00:00Z",
         "message": null,
-        "countdownTo": "2019-11-12T11:00:00Z"
+        "countdownTo": "2019-11-12T00:00:00Z"
       },
       {
-        "fromDate": "2019-11-12T11:00:00Z",
+        "fromDate": "2019-11-12T00:00:00Z",
+        "toDate": "2019-11-13T23:59:59Z",
+        "message": "Premiering Today!",
+        "countdownTo": null
+      },
+      {
+        "fromDate": "2019-11-13T00:00:00Z",
         "toDate": null,
         "message": "Available on Disney+",
         "countdownTo": null
