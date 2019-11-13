@@ -34,14 +34,14 @@
       },
       {
         "fromDate": "2019-11-12T00:00:00Z",
-        "toDate": "2019-11-13T23:59:59Z",
+        "toDate": "2019-11-12T23:59:59Z",
         "message": "Premiering Today!",
         "countdownTo": null
       },
       {
         "fromDate": "2019-11-13T00:00:00Z",
         "toDate": null,
-        "message": "Available on Disney+",
+        "message": "Streaming on Disney+",
         "countdownTo": null
       }
     ]
