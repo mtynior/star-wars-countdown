@@ -14,6 +14,12 @@
         "toDate": "2019-12-19T23:00:00Z",
         "message": null,
         "countdownTo": "2019-12-19T23:00:00Z"
+      },
+      {
+        "fromDate": "2019-12-19T23:00:00Z",
+        "toDate": null,
+        "message": "In Theaters Now!",
+        "countdownTo": null
       }
     ]
   },
