@@ -65,8 +65,20 @@
     "messages": [
       {
         "fromDate": null,
+        "toDate": "2020-02-17T00:00:00Z",
+        "message": null,
+        "countdownTo": "2020-02-17T00:00:00Z"
+      },
+      {
+        "fromDate": "2020-02-17T00:00:00Z",
+        "toDate": "2020-02-17T23:59:59Z",
+        "message": "Premiering Today!",
+        "countdownTo": null
+      },
+      {
+        "fromDate": "2020-02-18T00:00:00Z",
         "toDate": null,
-        "message": "February 2020!",
+        "message": "Streaming on Disney+",
         "countdownTo": null
       }
     ]
@@ -106,23 +118,23 @@
       "color": "#ffffff"
     },
     "messages": [
-      {	
-        "fromDate": null,	
-        "toDate": "2020-08-27T18:00:00Z",	
-        "message": null,	
-        "countdownTo": "2020-08-27T18:00:00Z"	
-      },	
-      {	
-        "fromDate": "2020-08-27T18:00:00Z",	
-        "toDate": "2020-08-30T18:00:00Z",	
-        "message": "It's happening right now!",	
-        "countdownTo": null	
-      },	
-      {	
-        "fromDate": "2020-08-30T18:00:00Z",	
-        "toDate": null,	
-        "message": "It's over :(",	
-        "countdownTo": null	
+      {
+        "fromDate": null,
+        "toDate": "2020-08-27T18:00:00Z",
+        "message": null,
+        "countdownTo": "2020-08-27T18:00:00Z"
+      },
+      {
+        "fromDate": "2020-08-27T18:00:00Z",
+        "toDate": "2020-08-30T18:00:00Z",
+        "message": "It's happening right now!",
+        "countdownTo": null
+      },
+      {
+        "fromDate": "2020-08-30T18:00:00Z",
+        "toDate": null,
+        "message": "It's over :(",
+        "countdownTo": null
       }
     ]
   }
