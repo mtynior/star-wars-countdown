@@ -17,8 +17,14 @@
       },
       {
         "fromDate": "2019-12-19T23:00:00Z",
-        "toDate": null,
+        "toDate": "2020-04-01T22:59:59Z",
         "message": "In Theaters Now!",
+        "countdownTo": null
+      },
+      {
+        "fromDate": "2020-04-01T23:00:00Z",
+        "toDate": null,
+        "message": "Available on Blue-ray, Disney+ & other digital platforms!",
         "countdownTo": null
       }
     ]
